@@ -3,12 +3,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "trailingSlash": true,
-  "crons": [
-    {
-      "path": "/api/seo-diagnostics.json?run=1",
-      "schedule": "0 */12 * * *"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
