@@ -1,4 +1,5 @@
 import modelDetails from "../content/service-details.json" with { type: "json" };
+import site from "../site.json" with { type: "json" };
 export type ServiceLink = {
   name: string;
   href: string;
@@ -39,81 +40,81 @@ const combinationOptions: ServiceLink[] = [
 export const serviceCategories: ServiceCategory[] = [
   {
     name: "Mobile Kitchens",
-    href: "/equipment-rental/mobile-kitchen-trailers/",
+    href: "/inventory/mobile-kitchen-models/",
     description:
       "Commercial mobile kitchen rentals for planned projects, renovations and emergency food service.",
     links: [
       {
         name: "24ft Mobile Kitchen Trailer",
-        href: "/services/mobile-kitchen-trailers/24ft/",
+        href: "/inventory/mobile-kitchen-models/24ft-mobile-kitchen/",
       },
       {
         name: "26ft Bulk Mobile Kitchen",
-        href: "/services/mobile-kitchen-trailers/26ft-bulk/",
+        href: "/inventory/mobile-kitchen-models/26ft-bulk-kitchen/",
       },
       {
         name: "28ft Mobile Kitchen Trailer",
-        href: "/services/mobile-kitchen-trailers/28ft/",
+        href: "/inventory/mobile-kitchen-models/28ft-mobile-kitchen/",
       },
       {
-        name: "38ft Mobile Kitchen Trailer",
-        href: "/services/mobile-kitchen-trailers/38ft/",
+        name: "26ft Mobile Kitchen Trailer",
+        href: "/inventory/mobile-kitchen-models/26ft-mobile-kitchen/",
       },
       {
         name: "40ft Mobile Kitchen Trailer",
-        href: "/services/mobile-kitchen-trailers/40ft/",
+        href: "/inventory/mobile-kitchen-models/40ft-mobile-kitchen/",
       },
       {
         name: "40ft Combination Mobile Kitchen",
-        href: "/services/mobile-kitchen-trailers/40ft-combination/",
+        href: "/inventory/mobile-kitchen-models/40ft-combo-kitchen/",
       },
       {
         name: "40ft Bulk Combination Mobile Kitchen",
-        href: "/services/mobile-kitchen-trailers/40ft-bulk-combination/",
+        href: "/inventory/mobile-kitchen-models/40ft-bulk-combo-kitchen/",
       },
     ],
   },
   {
     name: "Dishwashing",
-    href: "/portable-dishwashing-trailer-rental/",
+    href: "/inventory/dishwashing-models/",
     description:
       "Portable dishwashing facilities for high-volume sanitation and food service support.",
     links: [
       {
         name: "22ft Dishwashing Trailer",
-        href: "/services/dishwashing-trailers/22ft/",
+        href: "/inventory/dishwashing-models/22ft-dishwashing/",
       },
       {
         name: "24ft Dishwashing Trailer",
-        href: "/services/dishwashing-trailers/24ft/",
+        href: "/inventory/dishwashing-models/40ft-dishwasher/",
       },
       {
         name: "26ft Dishwashing Trailer",
-        href: "/services/dishwashing-trailers/26ft/",
+        href: "/inventory/dishwashing-models/26ft-dishwashing/",
       },
       {
         name: "38ft Conveyor Dishwashing Trailer",
-        href: "/services/dishwashing-trailers/38ft-conveyor/",
+        href: "/inventory/dishwashing-models/38ft-dishwashing/",
       },
     ],
   },
   {
     name: "Refrigeration",
-    href: "/equipment-rental/refrigeration/",
+    href: "/refrigeration/",
     description:
       "Temporary cold storage options for ingredients, prepared food and temperature-sensitive supplies.",
     links: [
       {
         name: "12ft Refrigeration Trailer",
-        href: "/equipment-rental-refrigeration-12ft-refrigerated-trailer/",
+        href: "/refrigeration/12ft-trailer-medium-high-temperature/",
       },
       {
         name: "20ft Refrigeration Trailer",
-        href: "/20ft-refrigeration-trailers/",
+        href: "/refrigeration/20ft-low-temperature/",
       },
       {
         name: "40ft Refrigerated Container",
-        href: "/equipment-rental/refrigerated-containers/",
+        href: "/refrigeration/40ft-container-all-ranges/",
       },
     ],
   },
@@ -236,6 +237,11 @@ export const serviceCategories: ServiceCategory[] = [
   },
 ];
 
+// The inherited master retains the full portfolio catalog for route analysis.
+// Only shower/rental categories are exposed in the local rebuild UI.
+export const showerServiceCategories = serviceCategories.slice(3, 9);
+export const kitchenServiceCategories = showerServiceCategories;
+
 const establishedPaths = new Set([
   "/equipment-rental-refrigeration-12ft-refrigerated-trailer/",
   "/20ft-refrigeration-trailers/",
@@ -254,7 +260,7 @@ export const serviceOptions = serviceCategories.flatMap((category) =>
       categoryDescription: category.description,
       description:
         modelDetails[link.href as keyof typeof modelDetails]?.intro ||
-        `${link.name} rental planning from Temporary123.`,
+        `${link.name} rental planning from ${site.brand}.`,
     })),
 );
 

@@ -2,23 +2,25 @@
 :root {
   font-family: var(--font-ui);
   font-synthesis: none;
-  --ink: #102f3e;
-  --blue: #006d8f;
-  --blue-hover: #00546e;
-  --cyan: #75daec;
-  --muted: #46616e;
-  --line: #d5e2e7;
-  --pale: #eef5f7;
+  /* Shared shower-rental palette: deep teal structure, clear water blue,
+     safety red actions, and warm yellow guidance. */
+  --ink: #123f46;
+  --blue: #00809a;
+  --blue-hover: #006f85;
+  --cyan: #35c5d9;
+  --muted: #526b73;
+  --line: #c9dce0;
+  --pale: #e8f3f5;
   --white: #fff;
   --dark-muted: #c4d9e2;
   --error: #a62121;
   --border-strong: #708c9b;
-  --support-band: #980606;
-  --support-band-hover: #790505;
-  --support-online: #2fd477;
-  --phone-emphasis: #b30d1b;
-  --contact-tab: #00a9dc;
-  --contact-tab-hover: #0089b3;
+  --support-band: #c7372f;
+  --support-band-hover: #a52d28;
+  --support-online: #39c87a;
+  --phone-emphasis: #c7372f;
+  --contact-tab: #00a6c2;
+  --contact-tab-hover: #00809a;
   --space-1: 0.5rem;
   --space-2: 0.75rem;
   --space-3: 1rem;

@@ -24,7 +24,7 @@ type EquipmentCard = {
 export const equipment: EquipmentCard[] = [
   {
     name: "Mobile Kitchens",
-    path: "/equipment-rental/mobile-kitchen-trailers/",
+    path: "/inventory/mobile-kitchen-models/",
     image: "/images/catalog/mobile-kitchen-trailers-960.webp",
     smallImage: "/images/catalog/mobile-kitchen-trailers-480.webp",
     category: "Food service",
@@ -35,7 +35,7 @@ export const equipment: EquipmentCard[] = [
   },
   {
     name: "Dishwashing",
-    path: "/portable-dishwashing-trailer-rental/",
+    path: "/inventory/dishwashing-models/",
     image: "/images/service-heroes/38ft-high-temp-dish/01-960.webp",
     smallImage: "/images/service-heroes/38ft-high-temp-dish/01-480.webp",
     imageAlt: "Commercial dishwashing machine inside a mobile dishwashing trailer",
@@ -47,7 +47,7 @@ export const equipment: EquipmentCard[] = [
   },
   {
     name: "Refrigeration",
-    path: "/equipment-rental/refrigeration/",
+    path: "/refrigeration/",
     image: "/images/catalog/refrigeration-trailers-960.webp",
     smallImage: "/images/catalog/refrigeration-trailers-480.webp",
     category: "Cold storage",
@@ -244,7 +244,7 @@ const homepagePhotos = [
     "Mobile handwashing trailer with sinks, mirrors and a raised canopy",
   ],
 ];
-const homepageEquipment: EquipmentCard[] = equipment.map((item, index) => ({
+const homepageEquipment: EquipmentCard[] = equipment.slice(0, 3).map((item, index) => ({
   ...item,
   name: homepagePhotos[index][0],
   // Preserve Charles's explicitly approved shower thumbnail; other cards use
@@ -300,7 +300,7 @@ export function Cards({
               <EquipmentImage
                 image={e.image}
                 smallImage={e.smallImage}
-                alt={e.imageAlt || `${e.name} equipment from Temporary123`}
+                alt={e.imageAlt || `${e.name} equipment from ${site.brand}`}
               />
             ) : (
               <div

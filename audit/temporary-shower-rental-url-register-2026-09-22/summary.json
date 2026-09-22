@@ -1,0 +1,196 @@
+﻿{
+    "target":  "https://temporary-shower-rental.com",
+    "discovered_at":  "2026-09-22T14:33:12.1001939Z",
+    "sitemap_index":  "https://temporary-shower-rental.com/sitemap.xml",
+    "sitemap_count":  21,
+    "url_count":  34758,
+    "image_reference_count":  0,
+    "by_sitemap":  [
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-1.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-10.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-11.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-12.xml",
+                           "count":  497
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-2.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-3.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-4.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-5.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-6.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-7.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-8.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-page-9.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-post-1.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-post-2.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-post-3.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-post-4.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-post-5.xml",
+                           "count":  2000
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-post-6.xml",
+                           "count":  1848
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-posts-resources-1.xml",
+                           "count":  384
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-taxonomies-category-1.xml",
+                           "count":  28
+                       },
+                       {
+                           "sitemap":  "wp-sitemap-users-1.xml",
+                           "count":  1
+                       }
+                   ],
+    "by_section":  [
+                       {
+                           "section":  "top-level",
+                           "count":  22496
+                       },
+                       {
+                           "section":  "california",
+                           "count":  1597
+                       },
+                       {
+                           "section":  "illinois",
+                           "count":  1456
+                       },
+                       {
+                           "section":  "arizona",
+                           "count":  1246
+                       },
+                       {
+                           "section":  "iowa",
+                           "count":  974
+                       },
+                       {
+                           "section":  "indiana",
+                           "count":  974
+                       },
+                       {
+                           "section":  "wisconsin",
+                           "count":  792
+                       },
+                       {
+                           "section":  "georgia",
+                           "count":  670
+                       },
+                       {
+                           "section":  "washington",
+                           "count":  633
+                       },
+                       {
+                           "section":  "arkansas",
+                           "count":  621
+                       },
+                       {
+                           "section":  "alabama",
+                           "count":  592
+                       },
+                       {
+                           "section":  "colorado",
+                           "count":  477
+                       },
+                       {
+                           "section":  "west-virginia",
+                           "count":  439
+                       },
+                       {
+                           "section":  "resources",
+                           "count":  384
+                       },
+                       {
+                           "section":  "alaska",
+                           "count":  355
+                       },
+                       {
+                           "section":  "idaho",
+                           "count":  236
+                       },
+                       {
+                           "section":  "wyoming",
+                           "count":  204
+                       },
+                       {
+                           "section":  "connecticut",
+                           "count":  184
+                       },
+                       {
+                           "section":  "florida",
+                           "count":  160
+                       },
+                       {
+                           "section":  "hawaii",
+                           "count":  158
+                       },
+                       {
+                           "section":  "delaware",
+                           "count":  79
+                       },
+                       {
+                           "section":  "category",
+                           "count":  28
+                       },
+                       {
+                           "section":  "home",
+                           "count":  1
+                       },
+                       {
+                           "section":  "author",
+                           "count":  1
+                       },
+                       {
+                           "section":  "district-of-columbia",
+                           "count":  1
+                       }
+                   ]
+}

@@ -17,7 +17,7 @@ import {
   EquipmentBrief,
   catalog as equipmentCatalogData,
 } from "./EquipmentCatalog";
-import { serviceCategories } from "./serviceMenu";
+import { kitchenServiceCategories, serviceCategories } from "./serviceMenu";
 import { StateGuideCards } from "./StateGuideCards";
 import consolidatedLocations from "../content/location-consolidation.json" with { type: "json" };
 import { ServiceDetail, modelDetails } from "./ServiceDetail";
@@ -40,12 +40,11 @@ export type SourcePage = {
 };
 const nav = [
   ["Service Areas", "/service-areas/"],
-  ["Calculator", "/rental-calculator/"],
-  ["About Us", "/about-us/"],
-  ["Articles", "/blog/"],
+  ["Rental Calculator", "/rental-calculator/"],
+  ["About Us", "/about-temporary-shower-rental/"],
   ["Contact Us", "/contact-us/"],
 ];
-const locationPrefix = "/equipment-rental/mobile-kitchen-trailers/";
+const locationPrefix = "/equipment-rental/shower-trailer/";
 export const isLocationPagePath = (path: string) =>
   path.startsWith(locationPrefix) && path !== locationPrefix;
 function Button({
@@ -64,6 +63,27 @@ function Button({
     </a>
   );
 }
+
+function ShowerInventoryDirectory() {
+  return (
+    <section className="shower-section" aria-labelledby="shower-inventory-title">
+      <span className="shower-kicker">TEMPORARY SHOWER RENTAL INVENTORY</span>
+      <h2 id="shower-inventory-title">Choose the facility mix your site needs.</h2>
+      <div className="shower-unit-grid">
+        {[
+          ["Shower trailers", "/equipment-rental/shower-trailer/", "/images/catalog/shower-trailer-960.webp"],
+          ["Restroom trailers", "/equipment-rental/restroom-trailers/", "/images/catalog/restroom-trailers-960.webp"],
+          ["Shower and restroom combinations", "/services/shower-restroom-combination-trailers/", "/images/catalog/restroom-trailers-960.webp"],
+        ].map(([name, href, image]) => (
+          <article className="shower-unit-card" key={href}>
+            <img src={image} alt={`${name} reference`} width="960" height="640" loading="lazy" />
+            <div><h3>{name}</h3><p>Confirm capacity, accessibility, utilities, servicing and delivery for the selected unit.</p><a className="text-link" href={href}>Explore this option ↗</a></div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
 export function Header({ path }: { path: string }) {
   return (
     <>
@@ -72,16 +92,17 @@ export function Header({ path }: { path: string }) {
       </a>
       <div className="header-sticky header-refresh">
         <header className="header wrap">
-          <a className="brand" href="/" aria-label="Temporary123 home">
+          <a className="brand" href="/" aria-label={`${site.brand} home`}>
             <img
-              src="/images/temporary123-logo.png"
-              width="80"
-              height="44"
-              alt=""
+              className="brand-logo"
+              src="/images/shower-rental-logo.webp"
+              alt="Shower Rental — professional high-definition temporary shower rentals"
+              width="420"
+              height="290"
             />
-            <span>
-              Temporary<span className="brand-number">123</span>
-              <small>TEMPORARY FACILITIES · PERMANENT COMMITMENT</small>
+            <span className="brand-wordmark">
+              Temporary Shower Rental <span className="brand-number">123</span>
+              <small>SHOWER TRAILERS · RESTROOM SOLUTIONS</small>
             </span>
           </a>
           <nav aria-label="Main navigation">
@@ -107,14 +128,14 @@ export function Header({ path }: { path: string }) {
               >
                 <div className="services-panel-heading">
                   <div>
-                    <span>Temporary facility rentals</span>
-                    <strong>Equipment for every stage of your project</strong>
+                    <span>Temporary shower rentals</span>
+                    <strong>Clean facilities for your project</strong>
                   </div>
                   <a href="/equipment-rental/">View All Equipment ↗</a>
                 </div>
                 <div className="services-panel-body">
                   <div className="service-category-list">
-                    {serviceCategories.map((category, index) => (
+                    {kitchenServiceCategories.map((category, index) => (
                       <details
                         className="service-category"
                         name="service-category"
@@ -197,7 +218,7 @@ export function Header({ path }: { path: string }) {
                 </summary>
                 <div>
                   <a href="/equipment-rental/">View All Equipment</a>
-                  {serviceCategories.map((category) => (
+                  {kitchenServiceCategories.map((category) => (
                     <details
                       className="mobile-service-category"
                       key={category.name}
@@ -322,7 +343,7 @@ export function Header({ path }: { path: string }) {
       <a
         className="contact-rail contact-rail-refresh"
         href="/contact-us/"
-        aria-label="Contact Temporary123 rental support now"
+        aria-label={`Contact ${site.brand} rental support now`}
         aria-controls="contact-drawer"
         aria-expanded="false"
         aria-current={path === "/contact-us/" ? "page" : undefined}
@@ -356,7 +377,7 @@ function ContactDrawer() {
     >
       <div className="contact-drawer-shell">
         <div className="contact-drawer-call">
-          <span>Temporary123 project desk</span>
+          <span>{site.brand} project desk</span>
           <button
             type="button"
             data-close-contact
@@ -423,20 +444,20 @@ export function Footer({ showClosing = true }: { showClosing?: boolean }) {
       <footer className="wrap footer">
         <div>
           <a className="wordmark" href="/">
-            Temporary<span>123</span>
+            Temporary Shower Rental <span>123</span>
           </a>
-          <p>Temporary facilities for the work ahead.</p>
-          <small>© {new Date().getFullYear()} Temporary123</small>
+          <p>Clean, dependable hygiene facilities for the work ahead.</p>
+          <small>© {new Date().getFullYear()} {site.brand}</small>
         </div>
         <div>
           <strong>Explore</strong>
-          <a href="/equipment-rental/">Services</a>
-          <a href="/services/">Project Solutions</a>
+          <a href="/equipment-rental/">Rental Inventory</a>
+          <a href="/equipment-rental/shower-trailer/">Shower Trailers</a>
+          <a href="/equipment-rental/restroom-trailers/">Restroom Trailers</a>
+          <a href="/services/shower-restroom-combination-trailers/">Combination Units</a>
           <a href="/industries/">Industries Served</a>
           <a href="/service-areas/">Service Areas</a>
-          <a href="/rental-calculator/">Rental Calculator</a>
           <a href="/government/">Government Services</a>
-          <a href="/gsa-schedule/">GSA Schedule Information</a>
         </div>
         <div>
           <strong>Get in touch</strong>
@@ -476,7 +497,7 @@ export function Site({
       <ContactDrawer />
       <script src="/location-product-tabs.js" defer />
       <main id="main" tabIndex={-1}>
-        {path === "/" ? (
+        {path === "/" || path === "/home/" ? (
           <Home />
         ) : path === "/rental-calculator/" ? (
           <RentalCalculator />
@@ -634,7 +655,7 @@ export function Site({
               <nav className="breadcrumb" aria-label="Breadcrumb">
                 <a href="/">Home</a>
                 <span>/</span>
-                <a href="/equipment-rental/">Services</a>
+                <a href="/inventory/">Inventory</a>
               </nav>
               <span className="eyebrow">TEMPORARY FACILITY RENTALS</span>
               <div className="service-category-heading">
@@ -724,7 +745,7 @@ export function Site({
           </section>
         ) : equipmentBrief ? (
           <EquipmentBrief item={equipmentBrief} />
-        ) : ["/services/", "/equipment-rental/", "/industries/"].includes(
+        ) : ["/services/", "/inventory/", "/equipment-rental/", "/industries/"].includes(
             path,
           ) ? (
           <section className="wrap section">
@@ -776,6 +797,8 @@ export function Site({
               <Cards />
             )}
             {path === "/equipment-rental/" ? (
+              <ShowerInventoryDirectory />
+            ) : path === "/inventory/" ? (
               <EquipmentCatalog />
             ) : (
               page && (
@@ -798,8 +821,8 @@ export function Site({
                     your operation.
                   </h2>
                   <p>
-                    Browse specialized temporary facility, workforce, government
-                    and emergency support pages from Temporary123.
+                    Browse specialized temporary kitchen, food-service,
+                    government and emergency support pages from {site.brand}.
                   </p>
                 </div>
                 <details>
@@ -818,6 +841,33 @@ export function Site({
               </section>
             )}
           </section>
+        ) : path === "/existing-mobile-kitchen-layouts/" ? (
+          <section className="wrap section narrow">
+            <span className="eyebrow">MOBILE KITCHEN LAYOUTS</span>
+            <h1>
+              Plan the flow before
+              <br />
+              the kitchen arrives.
+            </h1>
+            <p data-h1-intro>
+              Review existing mobile-kitchen configurations as a starting point
+              for your project. Final equipment, work zones, utilities and
+              placement are confirmed for the selected unit and site.
+            </p>
+            <div className="industry-briefs">
+              <article>
+                <span className="eyebrow">01 / PRODUCTION</span>
+                <h2>Cooking and preparation</h2>
+                <p>Match the cooking line and preparation space to your menu, meal volume and service schedule.</p>
+              </article>
+              <article>
+                <span className="eyebrow">02 / UTILITIES</span>
+                <h2>Connections and access</h2>
+                <p>Confirm power, potable water, wastewater, delivery access and the available installation footprint.</p>
+              </article>
+            </div>
+            <Button>Discuss your kitchen layout</Button>
+          </section>
         ) : path === "/planning/" ? (
           <section className="wrap section narrow">
             <span className="eyebrow">PROJECT PLANNING</span>
@@ -826,11 +876,11 @@ export function Site({
               <br />
               We’ll take it from there.
             </h1>
-            <p data-h1-intro>Prepare your temporary-facility project brief with the intended use, site address, available utilities, delivery access and rental dates. Review the details below before contacting the rental team.</p>
+            <p data-h1-intro>Prepare your temporary shower or restroom project brief with occupancy, site address, utilities, delivery access and rental dates. Review the details below before contacting the rental team.</p>
             {[
               [
                 "Your operation",
-                "What will the facilities support? Include occupancy, meal volume, operating hours and any special equipment needs.",
+                "What will the facilities support? Include occupancy, peak-use periods, operating hours and any accessibility needs.",
               ],
               [
                 "Your location",
@@ -848,20 +898,20 @@ export function Site({
             ))}
             <Button />
           </section>
-        ) : path === "/about-us/" ? (
+        ) : path === "/about-temporary-shower-rental/" ? (
           <div className="secondary-page about-refresh">
             <section className="about-hero" aria-labelledby="about-title">
               <div className="wrap section about-hero-grid">
                 <div className="secondary-intro-copy">
-                  <span className="eyebrow">ABOUT TEMPORARY123</span>
+                  <span className="eyebrow">ABOUT {site.brand.toUpperCase()}</span>
                   <h1 id="about-title">
-                    Temporary facilities built around the work.
+                    Clean facilities built around the work.
                   </h1>
                   <p data-h1-intro>
-                    Temporary123 helps project teams plan temporary facilities
-                    around the operation that must continue. Equipment selection,
-                    site access, utilities and rental timing are reviewed together
-                    for construction, food service, public-service and remote-workforce projects.
+                    {site.brand} helps project teams plan temporary shower and
+                    restroom facilities around the operation that must continue.
+                    Unit selection, site access, utilities and rental timing are
+                    reviewed together for construction, events and emergencies.
                   </p>
                   <Button href="/contact-us/">Plan your project</Button>
                   <div className="about-intro-topics" aria-label="Our approach">
@@ -873,12 +923,11 @@ export function Site({
                 <aside className="about-summary" aria-label="Company approach">
                   <img
                     className="about-summary-photo"
-                    src="/images/kitchen.webp"
-                    srcSet="/images/kitchen-480.webp 480w, /images/kitchen.webp 850w"
+                    src="/images/catalog/shower-trailer-960.webp"
                     sizes="(max-width: 760px) calc(100vw - 40px), 480px"
                     width="850"
                     height="650"
-                    alt="Commercial cooking equipment and preparation space inside a Temporary123 mobile kitchen"
+                    alt={`Private shower stalls inside a ${site.brand} trailer`}
                     fetchPriority="high"
                     decoding="async"
                   />
@@ -912,23 +961,23 @@ export function Site({
               <div className="about-service-grid">
                 {[
                   [
-                    "Mobile kitchen and food service",
-                    "Mobile kitchen trailer rentals, refrigeration trailers and temporary dining structures for planned or urgent food service operations.",
-                    "/equipment-rental/mobile-kitchen-trailers/",
+                    "Shower trailer rentals",
+                    "Private, climate-controlled shower capacity for construction, events, renovations and emergency response.",
+                    "/equipment-rental/shower-trailer/",
                   ],
                   [
-                    "Restroom, shower and laundry facilities",
-                    "Portable restroom trailers, shower trailers, handwashing stations and mobile laundry facilities for crews and guests.",
+                    "Restroom and combination facilities",
+                    "Portable restroom trailers and shower/restroom combinations for crews, guests and occupied facilities.",
                     "/equipment-rental/restroom-trailers/",
                   ],
                   [
-                    "Workforce housing and base camps",
-                    "Sleeper trailers, bunkhouses, mobile offices, breakrooms and crew camp facilities for remote and extended projects.",
-                    "/man-camps-for-rent/",
+                    "Government and emergency support",
+                    "Rapidly planned hygiene facilities for public works, disaster response, military and emergency-management projects.",
+                    "/government/",
                   ],
                   [
-                    "Site infrastructure and operations",
-                    "Temporary power, tents, modular buildings, command centers, water storage and site access equipment.",
+                    "Site planning and servicing",
+                    "Review access, water, wastewater, power, placement, servicing and removal before delivery.",
                     "/equipment-rental/",
                   ],
                 ].map(([title, description, href], index) => (
@@ -961,10 +1010,11 @@ export function Site({
                     arrangements are finalized.
                   </p>
                   <p>
-                    Temporary123 is listed as a GSA Schedule contract holder.
-                    Call our team at{" "}
+                    Call the {site.brand} team at{" "}
                     <a href={"tel:" + site.phoneE164}>{site.phoneDisplay}</a> to
-                    discuss commercial, government or emergency project needs.
+                    discuss commercial, institutional, government or emergency
+                    kitchen needs. Availability and project requirements are
+                    confirmed during planning.
                   </p>
                 </div>
               </div>
@@ -1191,7 +1241,7 @@ export function Site({
           <section className="wrap section narrow">
             <h1>Privacy</h1>
             <p data-h1-intro>
-              Review the information on this page about using the Temporary123
+              Review the information on this page about using the {site.brand}
               website and contacting the business. For questions about information
               you provide during a rental inquiry, contact the team using the
               published telephone number.
@@ -1202,7 +1252,7 @@ export function Site({
               team.
             </p>
             <p>
-              For questions about your information, contact Temporary123 at{" "}
+              For questions about your information, contact {site.brand} at{" "}
               {site.phoneDisplay}.
             </p>
           </section>

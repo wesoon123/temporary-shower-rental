@@ -10,6 +10,7 @@ import "./map-refresh.css";
 import "./secondary-refresh.css";
 import "./location-refresh.css";
 import "./location-image-gallery.css";
+import "./shower-home.css";
 import "./seo-dashboard.css";
 import "@fontsource-variable/manrope";
 import {

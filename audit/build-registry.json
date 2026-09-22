@@ -1,19 +1,27 @@
 {
-  "generatedAt": "2026-09-18T18:57:32.415Z",
-  "mode": "production",
-  "indexingScope": "locations-and-priority-services",
-  "indexingBatchSize": 25,
+  "generatedAt": "2026-09-22T16:36:05.882Z",
+  "mode": "preview",
+  "indexingScope": "homepage-and-service-areas",
+  "indexingBatchSize": 100,
   "activeIndexingBatch": 1,
-  "eligibleIndexingRoutes": 327,
-  "activeIndexingRoutes": 25,
-  "domainRoutingReady": true,
+  "eligibleIndexingRoutes": 303,
+  "activeIndexingRoutes": 0,
+  "domainRoutingReady": false,
   "pages": [
     {
       "path": "/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/services/",
+      "indexable": false
+    },
+    {
+      "path": "/inventory/",
+      "indexable": false
+    },
+    {
+      "path": "/existing-mobile-kitchen-layouts/",
       "indexable": false
     },
     {
@@ -126,7 +134,7 @@
     },
     {
       "path": "/equipment-rental/breakroom-trailer/",
-      "indexable": true,
+      "indexable": false,
       "modified": "2026-03-19T17:04:17"
     },
     {
@@ -141,7 +149,7 @@
     },
     {
       "path": "/equipment-rental/generator-trailers/",
-      "indexable": true,
+      "indexable": false,
       "modified": "2026-02-18T19:19:09"
     },
     {
@@ -156,7 +164,7 @@
     },
     {
       "path": "/equipment-rental/mobile-office-trailers/",
-      "indexable": true,
+      "indexable": false,
       "modified": "2026-03-19T17:01:48"
     },
     {
@@ -181,7 +189,7 @@
     },
     {
       "path": "/equipment-rental/restroom-trailers/",
-      "indexable": true,
+      "indexable": false,
       "modified": "2026-03-19T17:21:43"
     },
     {
@@ -191,7 +199,7 @@
     },
     {
       "path": "/equipment-rental/shower-trailer/",
-      "indexable": true,
+      "indexable": false,
       "modified": "2026-03-19T17:13:17"
     },
     {
@@ -206,7 +214,7 @@
     },
     {
       "path": "/equipment-rental/wastewater-and-freshwater-container/",
-      "indexable": true,
+      "indexable": false,
       "modified": "2025-11-04T11:19:15"
     },
     {
@@ -388,51 +396,75 @@
       "indexable": false
     },
     {
+      "path": "/inventory/mobile-kitchen-models/",
+      "indexable": false
+    },
+    {
+      "path": "/inventory/dishwashing-models/",
+      "indexable": false
+    },
+    {
+      "path": "/refrigeration/",
+      "indexable": false
+    },
+    {
       "path": "/services/shower-restroom-combination-trailers/",
       "indexable": false
     },
     {
-      "path": "/services/mobile-kitchen-trailers/24ft/",
+      "path": "/inventory/mobile-kitchen-models/24ft-mobile-kitchen/",
       "indexable": false
     },
     {
-      "path": "/services/mobile-kitchen-trailers/26ft-bulk/",
+      "path": "/inventory/mobile-kitchen-models/26ft-bulk-kitchen/",
       "indexable": false
     },
     {
-      "path": "/services/mobile-kitchen-trailers/28ft/",
+      "path": "/inventory/mobile-kitchen-models/28ft-mobile-kitchen/",
       "indexable": false
     },
     {
-      "path": "/services/mobile-kitchen-trailers/38ft/",
+      "path": "/inventory/mobile-kitchen-models/26ft-mobile-kitchen/",
       "indexable": false
     },
     {
-      "path": "/services/mobile-kitchen-trailers/40ft/",
+      "path": "/inventory/mobile-kitchen-models/40ft-mobile-kitchen/",
       "indexable": false
     },
     {
-      "path": "/services/mobile-kitchen-trailers/40ft-combination/",
+      "path": "/inventory/mobile-kitchen-models/40ft-combo-kitchen/",
       "indexable": false
     },
     {
-      "path": "/services/mobile-kitchen-trailers/40ft-bulk-combination/",
+      "path": "/inventory/mobile-kitchen-models/40ft-bulk-combo-kitchen/",
       "indexable": false
     },
     {
-      "path": "/services/dishwashing-trailers/22ft/",
+      "path": "/inventory/dishwashing-models/22ft-dishwashing/",
       "indexable": false
     },
     {
-      "path": "/services/dishwashing-trailers/24ft/",
+      "path": "/inventory/dishwashing-models/40ft-dishwasher/",
       "indexable": false
     },
     {
-      "path": "/services/dishwashing-trailers/26ft/",
+      "path": "/inventory/dishwashing-models/26ft-dishwashing/",
       "indexable": false
     },
     {
-      "path": "/services/dishwashing-trailers/38ft-conveyor/",
+      "path": "/inventory/dishwashing-models/38ft-dishwashing/",
+      "indexable": false
+    },
+    {
+      "path": "/refrigeration/12ft-trailer-medium-high-temperature/",
+      "indexable": false
+    },
+    {
+      "path": "/refrigeration/20ft-low-temperature/",
+      "indexable": false
+    },
+    {
+      "path": "/refrigeration/40ft-container-all-ranges/",
       "indexable": false
     },
     {
@@ -2713,31 +2745,31 @@
     },
     {
       "path": "/emergency-workforce-housing-in-california/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/command-center-trailers/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/decontamination-trailers/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/dump-rental/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/multi-trailer/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/port-potties-and-port-johns/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/ramp-rental/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/restroom-trailers/portable-restroom-trailers-in-alabama/",
@@ -2761,7 +2793,7 @@
     },
     {
       "path": "/equipment-rental/restroom-trailers/portable-restroom-trailers-in-california/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/restroom-trailers/portable-restroom-trailers-in-colorado/",
@@ -2949,19 +2981,19 @@
     },
     {
       "path": "/equipment-rental/shower-trailer/portable-shower-trailers-in-new-jersey-usa/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/sleeper-trailers/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/stair-rental/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/equipment-rental/waste-container/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/greensboro-north-carolina-usa-temporary-restroom-building-rental/",
@@ -2969,7 +3001,7 @@
     },
     {
       "path": "/houston-texas-mobile-kitchen-rental/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/modular-temporary-camp-facilities/",
@@ -2997,7 +3029,7 @@
     },
     {
       "path": "/remote-workforce-house-company-in-alabama/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/remote-workforce-house-company-in-hawaii/",
@@ -3013,11 +3045,11 @@
     },
     {
       "path": "/remote-workforce-housing-rentals-in-arizona/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/remote-workforce-housing-services-in-alaska/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/remote-workforce-housing-services-in-idaho/",
@@ -3041,11 +3073,11 @@
     },
     {
       "path": "/temporary-workforce-housing-facilities/",
-      "indexable": true
+      "indexable": false
     },
     {
       "path": "/workforce-housing-shelters-in-colorado/",
-      "indexable": true
+      "indexable": false
     }
   ],
   "unresolvedSourceLinks": [
@@ -3111,6 +3143,7 @@
     "/government/emergency-services/",
     "/temporary-luxury-remote-accommodation-rentals/",
     "/testimonials/",
+    "/wp-content/uploads/2021/11/CLASSROOM-TRAILER-web.jpg",
     "/wp-content/uploads/2023/02/Air-Force.png",
     "/wp-content/uploads/2023/02/Army.png",
     "/wp-content/uploads/2023/02/Coast-Guard.png",

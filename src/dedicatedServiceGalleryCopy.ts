@@ -1,6 +1,7 @@
 import { captionDetailBatchA } from "./serviceAreaCaptionBatchA";
 import { captionDetailBatchB } from "./serviceAreaCaptionBatchB";
 import { captionDetailBatchC } from "./serviceAreaCaptionBatchC";
+import site from "../site.json" with { type: "json" };
 
 /** Customer-facing copy for a dedicated service page that previously used the
  * generic reviewed-photo fallback. Image-specific disclosures remain owned by
@@ -17,5 +18,5 @@ export function dedicatedServiceGalleryCaption(
   if (!product) return undefined;
 
   const equipment = equipmentName.replace(/^(\d+)ft\b/i, "$1 ft");
-  return `Commercial Project and Base Camp ${equipment} Rental or Lease. Discuss weekly rental, monthly rental, or yearly rental and lease options for ${product.benefit}. ${product.detail} Call us now at +1 (800) 443-5212, available 24/7.`;
+  return `Commercial Project and Base Camp ${equipment} Rental or Lease. Discuss weekly rental, monthly rental, or yearly rental and lease options for ${product.benefit}. ${product.detail} Call us now at ${site.phoneDisplay}, available 24/7.`;
 }

@@ -1,13 +1,13 @@
 {
-  "brand": "Temporary123",
-  "origin": "https://temporary123.com",
-  "phoneDisplay": "+1 (800) 443 - 5212",
-  "phoneE164": "+18004435212",
-  "mode": "production",
-  "indexingScope": "locations-and-priority-services",
-  "indexingBatchSize": 25,
+  "brand": "Temporary Shower Rental 123",
+  "origin": "https://temporary-shower-rental.com",
+  "phoneDisplay": "+1 (888) 385-5513",
+  "phoneE164": "+18883855513",
+  "mode": "preview",
+  "indexingScope": "homepage-and-service-areas",
+  "indexingBatchSize": 100,
   "activeIndexingBatch": 1,
-  "indexingStartDate": "2026-09-14",
-  "inquiriesEnabled": true,
-  "domainRoutingReady": true
+  "indexingStartDate": "2026-09-22",
+  "inquiriesEnabled": false,
+  "domainRoutingReady": false
 }

@@ -76,6 +76,8 @@ for (const entry of index) {
 const coreRoutes = [
   "/",
   "/services/",
+  "/inventory/",
+  "/existing-mobile-kitchen-layouts/",
   "/industries/",
   "/service-areas/",
   "/seo-dashboard/",
@@ -166,7 +168,7 @@ const sourceDescription = (page: SourcePage) => {
     (inherited.length >= 155 && !/[.!?]$/.test(inherited));
   if (!unusable) return inherited;
   const subject = compact(page.title.split("|")[0], 65);
-  return `Explore ${subject} from Temporary123. Call ${site.phoneDisplay} to discuss site requirements, equipment availability and delivery.`;
+  return `Explore ${subject} from ${site.brand}. Call ${site.phoneDisplay} to discuss site requirements, equipment availability and delivery.`;
 };
 const unresolvedSourceLinks = new Set<string>();
 const dimensions: Record<string, { width: number; height: number }> = {};
@@ -223,22 +225,22 @@ for (const path of [...allRoutes, "/404/"]) {
   const hubHeadline = rentalHubHeadline(path);
   const info = legacyAuthorityPage
     ? {
-        title: `${legacyAuthorityPage.title} | Temporary123`,
+        title: `${legacyAuthorityPage.title} | ${site.brand}`,
         description: legacyAuthorityPage.description,
       }
     : industry
     ? {
-        title: `${industry.title}: Temporary Facilities to Rent or Lease | Temporary123`,
+        title: `${industry.title}: Temporary Facilities to Rent or Lease | ${site.brand}`,
         description: industry.description,
       }
     : detail
       ? {
-          title: `${rentalProductHeadline(detail.name)} | Temporary123`,
+          title: `${rentalProductHeadline(detail.name)} | ${site.brand}`,
           description: detail.intro.split(". ")[0] + ".",
         }
       : city
         ? {
-            title: `${cityHeadline(city)} | Temporary123`,
+            title: `${cityHeadline(city)} | ${site.brand}`,
             description: compact(
               alignedLocationIntro(
                 cityHeadline(city),
@@ -249,12 +251,12 @@ for (const path of [...allRoutes, "/404/"]) {
           }
         : directoryRegion
           ? {
-              title: `${regionLocationLabel(directoryRegion.region, directoryRegion.state)} Facility Rental Locations | Temporary123`,
+              title: `${regionLocationLabel(directoryRegion.region, directoryRegion.state)} Facility Rental Locations | ${site.brand}`,
               description: `Browse ${regionLocationLabel(directoryRegion.region, directoryRegion.state)} cities and communities for Temporary Facilities Rental planning. Find reviewed city guides and regional services.`,
             }
           : region
             ? {
-                title: `${regionRentalHeadline(region.region, region.state, region.index)} | Temporary123`,
+                title: `${regionRentalHeadline(region.region, region.state, region.index)} | ${site.brand}`,
                 description: compact(
                   alignedLocationIntro(
                     regionRentalHeadline(
@@ -269,7 +271,7 @@ for (const path of [...allRoutes, "/404/"]) {
               }
             : stateName
               ? {
-                  title: `${stateRentalHeadline(stateName)} | Temporary123`,
+                  title: `${stateRentalHeadline(stateName)} | ${site.brand}`,
                   description: compact(
                     alignedLocationIntro(
                       stateRentalHeadline(stateName),
@@ -280,40 +282,40 @@ for (const path of [...allRoutes, "/404/"]) {
                 }
               : hubHeadline
                 ? {
-                    title: `${hubHeadline} | Temporary123`,
+                    title: `${hubHeadline} | ${site.brand}`,
                     description: pageInfo(path).description,
                   }
                 : coreRoutes.includes(path)
                   ? pageInfo(path)
                   : page
                     ? {
-                        title: page.title + " | Temporary123",
+                        title: page.title + ` | ${site.brand}`,
                         description: sourceDescription(page),
                       }
                     : path === "/contact-us/"
                       ? {
-                          title: "Contact Temporary123 | Talk to a Specialist",
-                          description: `Call Temporary123 at ${site.phoneDisplay} for mobile kitchens, temporary facilities and project support.`,
+                          title: `Contact ${site.brand} | Talk to a Specialist`,
+                          description: `Call ${site.brand} at ${site.phoneDisplay} for shower trailers, restroom facilities and project support.`,
                         }
                       : path === "/equipment-rental/"
                         ? {
-                            title: "Equipment Rental | Temporary123",
+                            title: `Equipment Rental | ${site.brand}`,
                             description:
-                              "Explore Temporary123 mobile kitchens, restroom and shower trailers, workforce and site facilities.",
+                              `Explore ${site.brand} shower trailers, restroom facilities and supporting equipment.`,
                           }
                         : catalogItem
                           ? {
-                              title: `${rentalProductHeadline(catalogItem.name)} | Temporary123`,
+                              title: `${rentalProductHeadline(catalogItem.name)} | ${site.brand}`,
                               description: catalogItem.summary,
                             }
                           : serviceOption
                             ? {
-                                title: `${rentalProductHeadline(serviceOption.name)} | Temporary123`,
+                                title: `${rentalProductHeadline(serviceOption.name)} | ${site.brand}`,
                                 description: serviceOption.description,
                               }
                             : serviceCategory
                               ? {
-                                  title: `${rentalCategoryHeadline(serviceCategory.name)} | Temporary123`,
+                                  title: `${rentalCategoryHeadline(serviceCategory.name)} | ${site.brand}`,
                                   description: serviceCategory.description,
                                 }
                               : pageInfo(path);
@@ -325,7 +327,7 @@ for (const path of [...allRoutes, "/404/"]) {
       ? new URL(path, site.origin).href
       : "");
   if (!info.description.trim()) {
-    info.description = `Explore ${page?.title || "Temporary123 facilities"}. Call Temporary123 at ${site.phoneDisplay} to discuss your site, rental dates and equipment requirements.`;
+    info.description = `Explore ${page?.title || `${site.brand} facilities`}. Call ${site.brand} at ${site.phoneDisplay} to discuss your site, rental dates and equipment requirements.`;
   }
   const head =
     (fontAsset
@@ -455,7 +457,7 @@ for (const path of [...allRoutes, "/404/"]) {
       )
         img.attr(
           "alt",
-          `${h1.text().trim()}: Temporary123 equipment reference`,
+          `${h1.text().trim()}: ${site.brand} equipment reference`,
         );
     });
     const crumbs = breadcrumb

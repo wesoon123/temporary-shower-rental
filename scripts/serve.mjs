@@ -2,6 +2,7 @@ import http from "node:http";
 import { readFile, stat } from "node:fs/promises";
 import { resolve, extname, relative, isAbsolute } from "node:path";
 const root = resolve("dist");
+const port = Number(process.env.PORT || 4173);
 const { redirects = [], headers = [] } = JSON.parse(
   await readFile("vercel.json", "utf8"),
 );
@@ -35,7 +36,9 @@ http
       res.writeHead(400).end();
       return;
     }
-    const redirect = redirects.find((rule) => {
+    const redirect = redirects
+      .filter((rule) => !("has" in rule) && !("missing" in rule))
+      .find((rule) => {
       const pattern = rule.source
         .split("/")
         .map((segment) =>
@@ -45,7 +48,7 @@ http
         )
         .join("/");
       return new RegExp(`^${pattern}$`).test(path);
-    });
+      });
     if (redirect) {
       const destination = new URL(redirect.destination, "http://localhost");
       for (const [key, value] of new URL(req.url, "http://localhost")
@@ -123,4 +126,4 @@ http
         .end(await readFile(root + "/404.html"));
     }
   })
-  .listen(4173, "0.0.0.0", () => console.log("Preview: http://localhost:4173"));
+  .listen(port, "0.0.0.0", () => console.log(`Preview: http://localhost:${port}`));

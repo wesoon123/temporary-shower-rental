@@ -1,0 +1,645 @@
+﻿{
+    "target":  "https://temporarykitchens123.com",
+    "discovered_at":  "2026-09-22T14:51:20.9286075Z",
+    "sitemap_file":  "audit/kitchen-reference-discovery-2026-09-22/sitemap.xml",
+    "url_count":  35963,
+    "duplicate_url_count":  0,
+    "by_section":  [
+                       {
+                           "section":  "top-level",
+                           "count":  9691
+                       },
+                       {
+                           "section":  "wp-content",
+                           "count":  8264
+                       },
+                       {
+                           "section":  "cities-served-catering",
+                           "count":  814
+                       },
+                       {
+                           "section":  "texas",
+                           "count":  661
+                       },
+                       {
+                           "section":  "california",
+                           "count":  637
+                       },
+                       {
+                           "section":  "california-mobile-shower",
+                           "count":  627
+                       },
+                       {
+                           "section":  "illinois-mobile-shower",
+                           "count":  441
+                       },
+                       {
+                           "section":  "texas-mobile-shower",
+                           "count":  431
+                       },
+                       {
+                           "section":  "pennsylvania",
+                           "count":  413
+                       },
+                       {
+                           "section":  "new-york",
+                           "count":  373
+                       },
+                       {
+                           "section":  "new-york-mobile-shower",
+                           "count":  372
+                       },
+                       {
+                           "section":  "pennsylvania-mobile-shower",
+                           "count":  372
+                       },
+                       {
+                           "section":  "michigan",
+                           "count":  295
+                       },
+                       {
+                           "section":  "illinois",
+                           "count":  278
+                       },
+                       {
+                           "section":  "louisiana",
+                           "count":  277
+                       },
+                       {
+                           "section":  "mobile-kitchen",
+                           "count":  276
+                       },
+                       {
+                           "section":  "minnesota",
+                           "count":  273
+                       },
+                       {
+                           "section":  "florida-mobile-shower",
+                           "count":  268
+                       },
+                       {
+                           "section":  "ohio",
+                           "count":  260
+                       },
+                       {
+                           "section":  "north-carolina",
+                           "count":  249
+                       },
+                       {
+                           "section":  "florida",
+                           "count":  248
+                       },
+                       {
+                           "section":  "michigan-mobile-shower",
+                           "count":  247
+                       },
+                       {
+                           "section":  "georgia",
+                           "count":  240
+                       },
+                       {
+                           "section":  "ohio-mobile-shower",
+                           "count":  237
+                       },
+                       {
+                           "section":  "virginia",
+                           "count":  232
+                       },
+                       {
+                           "section":  "alabama-mobile-shower",
+                           "count":  232
+                       },
+                       {
+                           "section":  "iowa-mobile-shower",
+                           "count":  231
+                       },
+                       {
+                           "section":  "new-jersey-mobile-shower",
+                           "count":  223
+                       },
+                       {
+                           "section":  "georgia-mobile-shower",
+                           "count":  218
+                       },
+                       {
+                           "section":  "washington",
+                           "count":  213
+                       },
+                       {
+                           "section":  "north-carolina-mobile-shower",
+                           "count":  207
+                       },
+                       {
+                           "section":  "wisconsin-mobile-shower",
+                           "count":  196
+                       },
+                       {
+                           "section":  "minnesota-mobile-shower",
+                           "count":  193
+                       },
+                       {
+                           "section":  "indiana-mobile-shower",
+                           "count":  189
+                       },
+                       {
+                           "section":  "louisiana-mobile-shower",
+                           "count":  179
+                       },
+                       {
+                           "section":  "alabama",
+                           "count":  168
+                       },
+                       {
+                           "section":  "arkansas-mobile-shower",
+                           "count":  163
+                       },
+                       {
+                           "section":  "missouri-mobile-shower",
+                           "count":  158
+                       },
+                       {
+                           "section":  "indiana",
+                           "count":  157
+                       },
+                       {
+                           "section":  "oklahoma-mobile-shower",
+                           "count":  150
+                       },
+                       {
+                           "section":  "kansas",
+                           "count":  147
+                       },
+                       {
+                           "section":  "mississippi",
+                           "count":  145
+                       },
+                       {
+                           "section":  "missouri",
+                           "count":  143
+                       },
+                       {
+                           "section":  "washington-mobile-shower",
+                           "count":  141
+                       },
+                       {
+                           "section":  "colorado",
+                           "count":  136
+                       },
+                       {
+                           "section":  "massachusetts-mobile-shower",
+                           "count":  135
+                       },
+                       {
+                           "section":  "wisconsin",
+                           "count":  132
+                       },
+                       {
+                           "section":  "massachusetts",
+                           "count":  130
+                       },
+                       {
+                           "section":  "south-carolina",
+                           "count":  129
+                       },
+                       {
+                           "section":  "kansas-mobile-shower",
+                           "count":  128
+                       },
+                       {
+                           "section":  "maryland",
+                           "count":  125
+                       },
+                       {
+                           "section":  "arizona-mobile-shower",
+                           "count":  125
+                       },
+                       {
+                           "section":  "colorado-mobile-shower",
+                           "count":  125
+                       },
+                       {
+                           "section":  "maryland-mobile-shower",
+                           "count":  123
+                       },
+                       {
+                           "section":  "kentucky",
+                           "count":  115
+                       },
+                       {
+                           "section":  "music-festivals",
+                           "count":  114
+                       },
+                       {
+                           "section":  "new-jersey",
+                           "count":  111
+                       },
+                       {
+                           "section":  "laundry-trailers",
+                           "count":  110
+                       },
+                       {
+                           "section":  "oklahoma",
+                           "count":  107
+                       },
+                       {
+                           "section":  "oregon-mobile-shower",
+                           "count":  105
+                       },
+                       {
+                           "section":  "mississippi-mobile-shower",
+                           "count":  104
+                       },
+                       {
+                           "section":  "mobile-kitchen-rental",
+                           "count":  103
+                       },
+                       {
+                           "section":  "utah",
+                           "count":  100
+                       },
+                       {
+                           "section":  "kentucky-mobile-shower",
+                           "count":  99
+                       },
+                       {
+                           "section":  "idaho",
+                           "count":  98
+                       },
+                       {
+                           "section":  "tennessee-mobile-shower",
+                           "count":  98
+                       },
+                       {
+                           "section":  "tennessee",
+                           "count":  97
+                       },
+                       {
+                           "section":  "south-carolina-mobile-shower",
+                           "count":  96
+                       },
+                       {
+                           "section":  "virginia-mobile-shower",
+                           "count":  93
+                       },
+                       {
+                           "section":  "nebraska",
+                           "count":  93
+                       },
+                       {
+                           "section":  "new-mexico",
+                           "count":  91
+                       },
+                       {
+                           "section":  "montana",
+                           "count":  87
+                       },
+                       {
+                           "section":  "west-virginia",
+                           "count":  82
+                       },
+                       {
+                           "section":  "iowa",
+                           "count":  78
+                       },
+                       {
+                           "section":  "idaho-mobile-shower",
+                           "count":  76
+                       },
+                       {
+                           "section":  "arkansas",
+                           "count":  76
+                       },
+                       {
+                           "section":  "north-dakota",
+                           "count":  73
+                       },
+                       {
+                           "section":  "connecticut",
+                           "count":  71
+                       },
+                       {
+                           "section":  "connecticut-mobile-shower",
+                           "count":  71
+                       },
+                       {
+                           "section":  "west-virginia-mobile-shower",
+                           "count":  70
+                       },
+                       {
+                           "section":  "arizona",
+                           "count":  69
+                       },
+                       {
+                           "section":  "maine-mobile-shower",
+                           "count":  69
+                       },
+                       {
+                           "section":  "alaska",
+                           "count":  67
+                       },
+                       {
+                           "section":  "new-mexico-mobile-shower",
+                           "count":  66
+                       },
+                       {
+                           "section":  "oregon",
+                           "count":  64
+                       },
+                       {
+                           "section":  "military-base-list",
+                           "count":  63
+                       },
+                       {
+                           "section":  "utah-mobile-shower",
+                           "count":  63
+                       },
+                       {
+                           "section":  "south-dakota",
+                           "count":  61
+                       },
+                       {
+                           "section":  "catering",
+                           "count":  59
+                       },
+                       {
+                           "section":  "offshore-accommodation-on-shipdeck",
+                           "count":  57
+                       },
+                       {
+                           "section":  "nebraska-mobile-shower",
+                           "count":  56
+                       },
+                       {
+                           "section":  "maine",
+                           "count":  56
+                       },
+                       {
+                           "section":  "power-generator-trailer-rental",
+                           "count":  55
+                       },
+                       {
+                           "section":  "construction-modular-offices",
+                           "count":  52
+                       },
+                       {
+                           "section":  "sleeper-or-bunkhouse-modules-mobile-living-quarters",
+                           "count":  52
+                       },
+                       {
+                           "section":  "containerized-modules",
+                           "count":  52
+                       },
+                       {
+                           "section":  "generator-trailers",
+                           "count":  51
+                       },
+                       {
+                           "section":  "refrigeration-trailer-rental",
+                           "count":  51
+                       },
+                       {
+                           "section":  "basecamp-services-and-rentals",
+                           "count":  51
+                       },
+                       {
+                           "section":  "restroom-trailers",
+                           "count":  51
+                       },
+                       {
+                           "section":  "shower-trailer",
+                           "count":  51
+                       },
+                       {
+                           "section":  "locker-room-modules-services",
+                           "count":  51
+                       },
+                       {
+                           "section":  "modular-and-mobile-kitchens",
+                           "count":  51
+                       },
+                       {
+                           "section":  "dishwasher",
+                           "count":  51
+                       },
+                       {
+                           "section":  "cities-served-refrigeration",
+                           "count":  48
+                       },
+                       {
+                           "section":  "hawaii",
+                           "count":  45
+                       },
+                       {
+                           "section":  "south-dakota-mobile-shower",
+                           "count":  44
+                       },
+                       {
+                           "section":  "new-hampshire",
+                           "count":  44
+                       },
+                       {
+                           "section":  "cities-served-clear-span-structures",
+                           "count":  43
+                       },
+                       {
+                           "section":  "montana-mobile-shower",
+                           "count":  41
+                       },
+                       {
+                           "section":  "north-dakota-mobile-shower",
+                           "count":  40
+                       },
+                       {
+                           "section":  "military-mobile-kitchen",
+                           "count":  40
+                       },
+                       {
+                           "section":  "hawaii-mobile-shower",
+                           "count":  39
+                       },
+                       {
+                           "section":  "alaska-mobile-shower",
+                           "count":  37
+                       },
+                       {
+                           "section":  "temporary-living",
+                           "count":  37
+                       },
+                       {
+                           "section":  "nevada",
+                           "count":  33
+                       },
+                       {
+                           "section":  "inventory",
+                           "count":  30
+                       },
+                       {
+                           "section":  "wyoming",
+                           "count":  28
+                       },
+                       {
+                           "section":  "top-cities",
+                           "count":  27
+                       },
+                       {
+                           "section":  "nevada-mobile-shower",
+                           "count":  27
+                       },
+                       {
+                           "section":  "refrigeration",
+                           "count":  26
+                       },
+                       {
+                           "section":  "new-hampshire-mobile-shower",
+                           "count":  25
+                       },
+                       {
+                           "section":  "wyoming-mobile-shower",
+                           "count":  25
+                       },
+                       {
+                           "section":  "delaware-mobile-shower",
+                           "count":  21
+                       },
+                       {
+                           "section":  "vermont-mobile-shower",
+                           "count":  19
+                       },
+                       {
+                           "section":  "base-camp-services",
+                           "count":  19
+                       },
+                       {
+                           "section":  "vermont",
+                           "count":  18
+                       },
+                       {
+                           "section":  "refrigeration-services-in-florida",
+                           "count":  15
+                       },
+                       {
+                           "section":  "refrigeration-services-in-california",
+                           "count":  15
+                       },
+                       {
+                           "section":  "refrigeration-services-in-new-york",
+                           "count":  15
+                       },
+                       {
+                           "section":  "rhode-island",
+                           "count":  15
+                       },
+                       {
+                           "section":  "rhode-island-mobile-shower",
+                           "count":  13
+                       },
+                       {
+                           "section":  "delaware",
+                           "count":  11
+                       },
+                       {
+                           "section":  "dishwashing",
+                           "count":  10
+                       },
+                       {
+                           "section":  "services",
+                           "count":  9
+                       },
+                       {
+                           "section":  "kitchen-design",
+                           "count":  8
+                       },
+                       {
+                           "section":  "food-service",
+                           "count":  8
+                       },
+                       {
+                           "section":  "government",
+                           "count":  8
+                       },
+                       {
+                           "section":  "temporary-kitchen",
+                           "count":  8
+                       },
+                       {
+                           "section":  "portable-kitchen",
+                           "count":  7
+                       },
+                       {
+                           "section":  "dining-hall",
+                           "count":  7
+                       },
+                       {
+                           "section":  "modular-kitchen-buildings",
+                           "count":  6
+                       },
+                       {
+                           "section":  "emergency-kitchen",
+                           "count":  6
+                       },
+                       {
+                           "section":  "capabilities",
+                           "count":  6
+                       },
+                       {
+                           "section":  "mobile-support-rentals",
+                           "count":  5
+                       },
+                       {
+                           "section":  "portable-kitchen-trailer",
+                           "count":  4
+                       },
+                       {
+                           "section":  "dining-hall-inventory",
+                           "count":  4
+                       },
+                       {
+                           "section":  "mobile-kitchen-trailer",
+                           "count":  3
+                       },
+                       {
+                           "section":  "military-series",
+                           "count":  3
+                       },
+                       {
+                           "section":  "videos",
+                           "count":  3
+                       },
+                       {
+                           "section":  "dry-storage-container",
+                           "count":  2
+                       },
+                       {
+                           "section":  "correctional-facility-series",
+                           "count":  2
+                       },
+                       {
+                           "section":  "hospital-series",
+                           "count":  2
+                       },
+                       {
+                           "section":  "nursing-home-series",
+                           "count":  2
+                       },
+                       {
+                           "section":  "emergency-kitchen-trailer",
+                           "count":  2
+                       },
+                       {
+                           "section":  "home",
+                           "count":  1
+                       },
+                       {
+                           "section":  "wp-includes",
+                           "count":  1
+                       },
+                       {
+                           "section":  "kitchens",
+                           "count":  1
+                       },
+                       {
+                           "section":  "school-series",
+                           "count":  1
+                       }
+                   ]
+}

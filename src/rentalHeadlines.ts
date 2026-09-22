@@ -268,6 +268,7 @@ export const rentalCategoryHeadline = (name: string) =>
   categoryHeadlines[name] || `${name} Facility Rental`;
 
 const hubHeadlines: Record<string, string> = {
+  "/inventory/": "Temporary Kitchen Rental Inventory",
   "/equipment-rental/": "Nationwide Temporary Facility and Equipment Rental",
   "/industries/": "Commercial and Institutional Temporary Facility Rental",
   "/services/": "Nationwide Temporary Facility Rental Services",
