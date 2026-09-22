@@ -73,7 +73,7 @@ function ShowerInventoryDirectory() {
         {[
           ["Shower trailers", "/equipment-rental/shower-trailer/", "/images/catalog/shower-trailer-960.webp"],
           ["Restroom trailers", "/equipment-rental/restroom-trailers/", "/images/catalog/restroom-trailers-960.webp"],
-          ["Shower and restroom combinations", "/services/shower-restroom-combination-trailers/", "/images/catalog/restroom-trailers-960.webp"],
+          ["Shower and restroom combinations", "/services/shower-restroom-combination-trailers/", "/media/3ce3bc9f066f86f54836e1b3.webp"],
         ].map(([name, href, image]) => (
           <article className="shower-unit-card" key={href}>
             <figure>
