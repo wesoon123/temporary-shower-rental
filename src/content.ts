@@ -16,6 +16,7 @@ export const routes = [
   "/industries/",
   "/service-areas/",
   "/planning/",
+  "/about-us/",
   "/about-temporary-shower-rental/",
   "/contact-us/",
   "/privacy/",
@@ -29,6 +30,7 @@ const titles: Record<string, string> = {
   "/service-areas/": "Temporary Shower Rental Service Areas",
   "/seo-dashboard/": "SEO Migration Dashboard",
   "/planning/": "Plan Your Temporary Shower Rental",
+  "/about-us/": "About Temporary Shower Rental 123",
   "/about-temporary-shower-rental/": "About Temporary Shower Rental 123",
   "/contact-us/": "Contact Our Team",
   "/privacy/": "Privacy",
@@ -48,6 +50,8 @@ const descriptions: Record<string, string> = {
     "Owner-facing Temporary Shower Rental 123 migration dashboard for crawl health, protected target URLs and controlled local review.",
   "/planning/":
     "Prepare your shower or restroom trailer brief with occupancy, site access, utilities and rental dates before you call.",
+  "/about-us/":
+    "Learn how Temporary Shower Rental 123 coordinates clean, dependable shower and restroom facilities nationwide.",
   "/about-temporary-shower-rental/":
     "Learn how Temporary Shower Rental 123 coordinates clean, dependable shower and restroom facilities nationwide.",
   "/contact-us/":

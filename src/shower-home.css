@@ -33,3 +33,140 @@
   font-size: 0.68rem;
   line-height: 1.35;
 }
+
+/* Shared child-page theme. This is intentionally visual-only: existing page
+   structure, copy, controls and URL slugs remain unchanged. */
+:is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page) {
+  color: #123f46;
+  background: #f7fbfc;
+}
+
+:is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page)
+  :is(h1, h2, h3, h4) {
+  color: #063b53;
+}
+
+:is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page)
+  :is(p, li, dd) {
+  color: #526b73;
+}
+
+:is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page)
+  .eyebrow {
+  color: #00809a;
+}
+
+:is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page)
+  .breadcrumb {
+  color: #526b73;
+}
+
+:is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page)
+  .breadcrumb a,
+:is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page)
+  :is(a, .text-link):not(.button) {
+  color: #00809a;
+}
+
+:is(.service-option-page, .model-page, .location-page, .catalog-page)
+  :is(.service-category-cards a, .catalog-card, .equipment-card, .industry-links a, .service-option-card) {
+  background: #fff;
+  border-color: #c9dce0;
+  box-shadow: 0 12px 30px rgb(6 59 83 / 8%);
+}
+
+:is(.service-option-page, .model-page, .location-page, .catalog-page)
+  :is(.service-category-cards a, .industry-links a, .service-option-card):is(:hover, :focus-visible) {
+  border-color: #00a6c2;
+  box-shadow: 0 16px 34px rgb(6 59 83 / 14%);
+}
+
+:is(.service-category-actions, .model-actions, .state-services-cta, .catalog-help)
+  .button,
+:is(.service-category-actions, .model-actions, .state-services-cta, .catalog-help)
+  button {
+  color: #fff !important;
+  background: #ed3b3d !important;
+  border-color: #ed3b3d !important;
+}
+
+:is(.service-category-actions, .model-actions, .state-services-cta, .catalog-help)
+  :is(.button, button):is(:hover, :focus-visible) {
+  background: #c7372f !important;
+  border-color: #c7372f !important;
+}
+
+:is(.model-highlight, .model-confirm, .catalog-help, .state-services-cta, .about-commitment) {
+  background: #e8f3f5;
+  border-color: #c9dce0;
+}
+
+:is(.model-call, .state-services-call a, .location-stats strong) {
+  color: #c7372f;
+}
+
+:is(.model-hero, .location-hero, .about-hero, .blog-hero) {
+  border-top: 4px solid #1c95c2;
+}
+
+:is(.model-hero, .location-hero, .about-hero, .blog-hero) figcaption {
+  color: #fff;
+  background: rgb(6 59 83 / 82%);
+}
+
+:is(.service-option-page, .model-page, .location-page, .catalog-page)
+  :is(input, select, textarea) {
+  border-color: #c9dce0;
+  background: #fff;
+}
+
+:is(.service-option-page, .model-page, .location-page, .catalog-page)
+  :is(input, select, textarea):focus {
+  border-color: #00809a;
+  outline-color: #35c5d9;
+}
+
+@media (max-width: 760px) {
+  :is(.secondary-page, .service-option-page, .model-page, .location-page, .catalog-page)
+    .section {
+    padding-inline: 1.25rem;
+  }
+}
+
+/* Context-aware contrast for the dark planning surface. */
+.model-planning {
+  color: #fff;
+  background: linear-gradient(145deg, #063b53 0%, #0b7285 100%);
+  border-color: #0b7285;
+}
+
+.model-planning :is(h2, h3, h4) {
+  color: #fff !important;
+}
+
+.model-planning :is(p, li) {
+  color: #d9eef0 !important;
+}
+
+.model-planning .model-confirm {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: #e8f3f5;
+  border-top-color: #35c5d9;
+  border-radius: 0.25rem;
+}
+
+.model-planning .model-confirm :is(h3, p) {
+  color: #123f46 !important;
+}
+
+.model-planning .button {
+  color: #123f46 !important;
+  background: #ffd166 !important;
+  border-color: #ffd166 !important;
+}
+
+.model-planning .button:is(:hover, :focus-visible) {
+  background: #ffe09a !important;
+  border-color: #ffe09a !important;
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T16:36:05.882Z",
+  "generatedAt": "2026-09-22T18:08:27.351Z",
   "mode": "preview",
   "indexingScope": "homepage-and-service-areas",
   "indexingBatchSize": 100,
@@ -46,6 +46,10 @@
     },
     {
       "path": "/about-us/",
+      "indexable": false
+    },
+    {
+      "path": "/about-temporary-shower-rental/",
       "indexable": false
     },
     {

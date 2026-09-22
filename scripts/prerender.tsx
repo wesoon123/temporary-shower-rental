@@ -84,6 +84,7 @@ const coreRoutes = [
   "/rental-calculator/",
   "/planning/",
   "/about-us/",
+  "/about-temporary-shower-rental/",
   "/blog/",
   "/contact-us/",
   "/privacy/",

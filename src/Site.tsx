@@ -901,7 +901,7 @@ export function Site({
             ))}
             <Button />
           </section>
-        ) : path === "/about-temporary-shower-rental/" ? (
+        ) : path === "/about-temporary-shower-rental/" || path === "/about-us/" ? (
           <div className="secondary-page about-refresh">
             <section className="about-hero" aria-labelledby="about-title">
               <div className="wrap section about-hero-grid">
