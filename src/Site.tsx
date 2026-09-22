@@ -76,7 +76,10 @@ function ShowerInventoryDirectory() {
           ["Shower and restroom combinations", "/services/shower-restroom-combination-trailers/", "/images/catalog/restroom-trailers-960.webp"],
         ].map(([name, href, image]) => (
           <article className="shower-unit-card" key={href}>
-            <img src={image} alt={`${name} reference`} width="960" height="640" loading="lazy" />
+            <figure>
+              <img src={image} alt={`${name} reference`} width="960" height="640" loading="lazy" />
+              <figcaption>{name} facility reference; confirm the exact configuration and accessibility layout before booking.</figcaption>
+            </figure>
             <div><h3>{name}</h3><p>Confirm capacity, accessibility, utilities, servicing and delivery for the selected unit.</p><a className="text-link" href={href}>Explore this option ↗</a></div>
           </article>
         ))}

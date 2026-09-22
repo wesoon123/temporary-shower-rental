@@ -8,7 +8,7 @@ export type CatalogItem = (typeof catalog.items)[number];
 
 function CatalogImage({ item }: { item: CatalogItem }) {
   const photo = catalogPhotoCoverage(item), image = photo.images[0];
-  if (!image) return <div className="verified-photo-pending" data-catalog-photo-pending><strong>Verified photography coming soon</strong><p>{photo.caption}</p></div>;
+  if (!image) return <div className="verified-photo-pending" data-catalog-photo-pending role="img" aria-label={`${item.name} facility reference`}><strong>{item.name} facility reference</strong><p>{photo.caption}</p></div>;
   return <img src={image.src} srcSet={image.srcSet} sizes="(max-width: 700px) calc(100vw - 40px), 480px" width={image.width} height={image.height} alt={image.alt} loading="lazy" decoding="async" />;
 }
 
@@ -157,7 +157,7 @@ export function EquipmentBrief({ item }: { item: CatalogItem }) {
           </a>
         </div>
         <div className="brief-image" data-catalog-gallery={item.id}>
-          {photo.images.length ? <ServiceHeroCarousel images={photo.images} label={item.name} lightboxLabel={item.name} caption={photo.caption} /> : <div className="verified-photo-pending" data-catalog-photo-pending><strong>Verified photography coming soon</strong><p>{photo.caption}</p></div>}
+          {photo.images.length ? <ServiceHeroCarousel images={photo.images} label={item.name} lightboxLabel={item.name} caption={photo.caption} /> : <figure className="verified-photo-pending" data-catalog-photo-pending><strong>{item.name} facility reference</strong><figcaption>{photo.caption}</figcaption></figure>}
         </div>
       </div>
       <div className="brief-planning">

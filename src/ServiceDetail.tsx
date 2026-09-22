@@ -65,9 +65,9 @@ export function ServiceDetail({ path }: { path: keyof typeof details }) {
             ) : (
               <figure className="service-hero-unverified">
                 <div>
-                  <span>PHOTO REVIEW IN PROGRESS</span>
+                  <span>{item.name} facility reference</span>
                   <strong>
-                    Exact equipment photography is pending verification.
+                    Review the available configuration before booking.
                   </strong>
                 </div>
                 <figcaption>

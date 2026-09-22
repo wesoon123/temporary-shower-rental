@@ -1114,6 +1114,96 @@ body.contact-drawer-open .emergency-dispatch {
   }
 }
 
+/* Overlay color treatment: reuse the site's deep-teal / water-blue system
+   while retaining red only for urgent actions. Layout and behavior stay
+   unchanged. */
+.emergency-dispatch-panel {
+  --dispatch-red: #063b53;
+  --dispatch-amber: #ffd166;
+  background: linear-gradient(145deg, #063b53 0%, #0b7285 100%);
+  border-color: rgb(53 197 217 / 42%);
+  box-shadow: 0 24px 58px rgb(6 59 83 / 34%);
+}
+
+.emergency-dispatch-panel::before {
+  width: 5px;
+  background: #35c5d9;
+}
+
+.emergency-dispatch-kicker {
+  color: #ffd166;
+}
+
+.emergency-dispatch-panel p {
+  color: rgb(255 255 255 / 88%);
+}
+
+.emergency-dispatch-call {
+  color: #123f46;
+  background: #ffd166;
+}
+
+.emergency-dispatch-call:is(:hover, :focus-visible) {
+  background: #ffe09a;
+}
+
+.emergency-dispatch-request {
+  color: #fff;
+  border-color: rgb(53 197 217 / 72%);
+  background: rgb(6 59 83 / 22%);
+}
+
+.emergency-dispatch-request:is(:hover, :focus-visible) {
+  border-color: #35c5d9;
+  background: rgb(53 197 217 / 18%);
+}
+
+.emergency-dispatch-close {
+  background: rgb(53 197 217 / 20%);
+}
+
+.emergency-dispatch-close:is(:hover, :focus-visible) {
+  background: rgb(53 197 217 / 36%);
+}
+
+.contact-drawer-call {
+  background: linear-gradient(135deg, #063b53 0%, #0b7285 100%);
+}
+
+.contact-drawer-header .contact-drawer-kicker,
+.contact-drawer-intro {
+  color: #00809a;
+}
+
+.contact-drawer .form-intro {
+  background: #e8f3f5;
+  border-left-color: #00a6c2;
+}
+
+.contact-drawer .form-intro a,
+.contact-drawer-actions a span {
+  color: #c7372f;
+}
+
+.contact-drawer-actions :is(button, a) {
+  border-color: #00809a;
+}
+
+.contact-drawer-actions button {
+  background: #00809a;
+}
+
+.contact-drawer-actions button:is(:hover, :focus-visible) {
+  background: #006f85;
+}
+
+.contact-drawer .quote-form input:focus,
+.contact-drawer .quote-form select:focus,
+.contact-drawer .quote-form textarea:focus {
+  outline-color: #35c5d9;
+  border-color: #00809a;
+}
+
 .contact-grid .contact-call .button {
   max-width: 100%;
   gap: 0.75rem;

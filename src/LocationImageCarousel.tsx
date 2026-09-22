@@ -144,10 +144,10 @@ export function LocationImageCarousel({
               strokeWidth="2"
             />
           </svg>
-          <strong>Verified photography coming soon</strong>
+          <strong>{headline} facility references</strong>
           <p>
-            Matching equipment images are being verified. We will not substitute
-            a different unit or configuration.
+            Review the available {headline.toLowerCase()} configuration,
+            dimensions and delivery requirements with the rental team.
           </p>
         </div>
       )}

@@ -162,7 +162,7 @@ for (const item of equipment) {
   const photo = cardGallery(item.name).images[0];
   item.image = photo?.src || "";
   item.smallImage = photo?.thumbnail;
-  item.imageAlt = photo?.alt || "Verified restroom-only photography coming soon";
+  item.imageAlt = photo?.alt || `${item.name} facility reference; confirm the exact rental configuration with the project team`;
 }
 
 export function EquipmentImage({
@@ -308,7 +308,7 @@ export function Cards({
                 role="img"
                 aria-label={e.imageAlt}
               >
-                <span>Verified equipment photo pending</span>
+                <span>{e.name} facility reference</span>
               </div>
             )}
             <span className="category-label">{e.category}</span>
@@ -371,7 +371,7 @@ export function Cards({
               Close <span aria-hidden="true">×</span>
             </button>
             <div className="dialog-grid">
-              {equipmentGalleryForPath(e.path).images.length ? <ServiceHeroCarousel images={equipmentGalleryForPath(e.path).images} label={e.name} lightboxLabel={equipmentGalleryForPath(e.path).groups[0]?.headline || e.name} caption={equipmentGalleryCaption(e.path)} deferLoading /> : <div className="verified-photo-pending"><strong>Verified photography coming soon</strong><p>Matching equipment photographs are not yet verified.</p></div>}
+              {equipmentGalleryForPath(e.path).images.length ? <ServiceHeroCarousel images={equipmentGalleryForPath(e.path).images} label={e.name} lightboxLabel={equipmentGalleryForPath(e.path).groups[0]?.headline || e.name} caption={equipmentGalleryCaption(e.path)} deferLoading /> : <figure className="verified-photo-pending"><strong>{e.name} facility reference</strong><figcaption>Review the available configuration, dimensions and utility requirements with the rental team.</figcaption></figure>}
               <div className="dialog-copy">
                 <span className="eyebrow">{e.category}</span>
                 <h2 id={`equipment-title-${i}`}>{e.name}</h2>

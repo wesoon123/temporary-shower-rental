@@ -938,7 +938,7 @@ const openState = (name: string, trigger: HTMLElement | SVGElement) => {
       const pending = document.createElement("div");
       pending.className = "verified-photo-pending";
       pending.setAttribute("data-verified-photo-pending", "");
-      pending.textContent = "Verified photography coming soon";
+              pending.textContent = "Facility reference image";
       galleryHost.append(pending);
     }
   }
