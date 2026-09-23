@@ -624,6 +624,11 @@ export function imagesForServicePath(
     "/services/laundry-trailers/30ft/": "30 ft Laundry Trailer",
     "/equipment-rental/refrigerated-containers/":
       "40 ft Refrigerated Container",
+    "/refrigeration/12ft-trailer-medium-high-temperature/":
+      "20 ft Refrigerated Trailer",
+    "/refrigeration/20ft-low-temperature/": "20 ft Refrigerated Trailer",
+    "/refrigeration/40ft-container-all-ranges/":
+      "40 ft Refrigerated Container",
     "/services/mobile-sleeper-trailers/20ft-contractor/":
       "20 ft Contractor Sleeper Trailer",
     "/services/mobile-sleeper-trailers/20ft-vip/": "20 ft VIP Sleeper Trailer",

@@ -26,7 +26,7 @@ import { renderSourceContent } from "./source-content";
 import { preserveMedia } from "./preserve-media";
 import { load } from "cheerio";
 import { catalog } from "../src/EquipmentCatalog";
-import modelDetails from "../content/service-details.json" with { type: "json" };
+import { modelDetails } from "../src/ServiceDetail";
 import { serviceCategories, serviceOptions } from "../src/serviceMenu";
 import { regionPages, regionPageByPath } from "../src/regionGuides";
 import { cityPageByPath, reviewedCityPages } from "../src/cityDirectory";

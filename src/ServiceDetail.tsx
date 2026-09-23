@@ -10,9 +10,19 @@ import {
   referenceCaptionForModel,
 } from "./equipmentPhotoPolicy";
 import { dedicatedServiceGalleryCaption } from "./dedicatedServiceGalleryCopy";
-export const modelDetails = details;
-export function ServiceDetail({ path }: { path: keyof typeof details }) {
-  const item = details[path];
+// Keep the inventory menu slugs addressable while reusing the reviewed
+// refrigeration records that power the established Temporary123 URLs.
+const detailAliases = {
+  "/refrigeration/12ft-trailer-medium-high-temperature/":
+    details["/equipment-rental-refrigeration-12ft-refrigerated-trailer/"],
+  "/refrigeration/20ft-low-temperature/": details["/20ft-refrigeration-trailers/"],
+  "/refrigeration/40ft-container-all-ranges/":
+    details["/equipment-rental/refrigerated-containers/"],
+} as const;
+
+export const modelDetails = { ...details, ...detailAliases };
+export function ServiceDetail({ path }: { path: keyof typeof modelDetails }) {
+  const item = modelDetails[path];
   const verifiedImages = imagesForServicePath(path);
   const modelId = verifiedImages?.[0].model ?? null;
   const referenceCaption = modelId
