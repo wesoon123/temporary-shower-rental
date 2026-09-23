@@ -43,6 +43,61 @@
   ],
   "redirects": [
     {
+      "source": "/inventory/mobile-kitchen-models/24ft-mobile-kitchen/",
+      "destination": "/services/mobile-kitchen-trailers/24ft/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/mobile-kitchen-models/26ft-bulk-kitchen/",
+      "destination": "/services/mobile-kitchen-trailers/26ft-bulk/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/mobile-kitchen-models/28ft-mobile-kitchen/",
+      "destination": "/services/mobile-kitchen-trailers/28ft/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/mobile-kitchen-models/26ft-mobile-kitchen/",
+      "destination": "/services/mobile-kitchen-trailers/26ft-bulk/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/mobile-kitchen-models/40ft-mobile-kitchen/",
+      "destination": "/services/mobile-kitchen-trailers/40ft/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/mobile-kitchen-models/40ft-combo-kitchen/",
+      "destination": "/services/mobile-kitchen-trailers/40ft-combination/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/mobile-kitchen-models/40ft-bulk-combo-kitchen/",
+      "destination": "/services/mobile-kitchen-trailers/40ft-bulk-combination/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/dishwashing-models/22ft-dishwashing/",
+      "destination": "/services/dishwashing-trailers/22ft/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/dishwashing-models/40ft-dishwasher/",
+      "destination": "/services/dishwashing-trailers/24ft/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/dishwashing-models/26ft-dishwashing/",
+      "destination": "/services/dishwashing-trailers/26ft/",
+      "permanent": true
+    },
+    {
+      "source": "/inventory/dishwashing-models/38ft-dishwashing/",
+      "destination": "/services/dishwashing-trailers/38ft-conveyor/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
