@@ -122,10 +122,10 @@ export const serviceCategories: ServiceCategory[] = [
     name: "Shower",
     href: "/equipment-rental/shower-trailer/",
     description:
-      "Shower-only options include a 22 ft trailer with 10 stalls and a 20 ft container with 5 stalls.",
+      "Shower-only options include an approved 20 ft trailer with 5 stalls and a 20 ft container with 5 stalls.",
     links: [
       {
-        name: "22 ft Shower Trailer, 10 Stalls",
+        name: "20 ft Shower Trailer, 5 Stalls",
         href: "/services/shower-trailers/22ft-10-stall/",
       },
       {
@@ -237,9 +237,9 @@ export const serviceCategories: ServiceCategory[] = [
   },
 ];
 
-// The inherited master retains the full portfolio catalog for route analysis.
-// Only shower/rental categories are exposed in the local rebuild UI.
-export const showerServiceCategories = serviceCategories.slice(3, 9);
+// The inventory menu follows the approved eight-category Super 8 structure.
+// Handwashing remains available through its dedicated inventory route and footer links.
+export const showerServiceCategories = serviceCategories.slice(0, 8);
 export const kitchenServiceCategories = showerServiceCategories;
 
 const establishedPaths = new Set([

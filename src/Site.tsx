@@ -71,9 +71,14 @@ function ShowerInventoryDirectory() {
       <h2 id="shower-inventory-title">Choose the facility mix your site needs.</h2>
       <div className="shower-unit-grid">
         {[
-          ["Shower trailers", "/equipment-rental/shower-trailer/", "/images/catalog/shower-trailer-960.webp"],
-          ["Restroom trailers", "/equipment-rental/restroom-trailers/", "/images/catalog/restroom-trailers-960.webp"],
-          ["Shower and restroom combinations", "/services/shower-restroom-combination-trailers/", "/media/3ce3bc9f066f86f54836e1b3.webp"],
+          ["Mobile kitchens", "/equipment-rental/mobile-kitchen-trailers/", "/images/service-heroes/24ft-mobile-kitchen/01-960.webp"],
+          ["Dishwashing trailers", "/inventory/dishwashing-models/", "/images/service-heroes/38ft-high-temp-dish/01-960.webp"],
+          ["Refrigeration trailers", "/refrigeration/", "/images/service-heroes/20ft-refrigerated-trailer/01-960.webp"],
+          ["Shower trailers", "/equipment-rental/shower-trailer/", "/images/service-heroes/20ft-shower-trailer-sink/01-960.webp"],
+          ["Restroom trailers", "/equipment-rental/restroom-trailers/", "/images/catalog-supplied/restroom-trailers/01-960.webp"],
+          ["Shower and restroom combinations", "/services/shower-restroom-combination-trailers/", "/images/service-heroes/13ft-shower-restroom-combination/01-960.webp"],
+          ["Sleeper trailers", "/equipment-rental/mobile-sleep-trailers/", "/media/4b67ae2ec507c379fdf9a7e3.png"],
+          ["Laundry trailers", "/equipment-rental/laundry-trailers/", "/images/service-heroes/30ft-laundry-trailer/01-960.webp"],
         ].map(([name, href, image]) => (
           <article className="shower-unit-card" key={href}>
             <figure>
@@ -926,7 +931,7 @@ export function Site({
                 <aside className="about-summary" aria-label="Company approach">
                   <img
                     className="about-summary-photo"
-                    src="/images/catalog/shower-trailer-960.webp"
+                    src="/images/service-heroes/20ft-shower-trailer-sink/01-960.webp"
                     sizes="(max-width: 760px) calc(100vw - 40px), 480px"
                     width="850"
                     height="650"

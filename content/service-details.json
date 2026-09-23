@@ -578,24 +578,24 @@
   },
   "/services/shower-trailers/22ft-10-stall/": {
     "equipment": [
-      "One 22 ft mobile shower trailer configuration",
-      "10 individual shower stalls for workforce hygiene",
+      "One approved 20 ft shower-trailer reference configuration",
+      "Five individual shower stalls with exterior handwashing sinks",
       "A compact shower facility for construction sites, man camps and emergency base camps"
     ],
     "planning": [
       "Share the number of users and the expected shift schedule.",
-      "Confirm water, wastewater, power and hot water requirements for the 10 stalls.",
+      "Confirm water, wastewater, power and hot water requirements for the five-stall layout.",
       "Plan delivery access, cleaning, servicing and safe pedestrian routes before arrival."
     ],
-    "use": "The 22 ft shower trailer provides 10 stalls for construction crews, man camps, facility renovations and emergency support. Plan capacity around the busiest shift change and allow time for cleaning, water supply and wastewater servicing.",
-    "image": "/images/catalog/temporary-shower-trailers-960.webp",
-    "alt": "Interior reference for the 22 ft shower trailer with 10 stalls",
-    "unknown": "Utility ratings, tank capacities, water heating performance, floor plan and the available unit must be confirmed for the project.",
-    "name": "22 ft Shower Trailer, 10 Stalls",
+    "use": "The approved shower-only reference is a 20 ft trailer with five stalls and exterior handwashing sinks. It supports construction crews, man camps, facility renovations and emergency support. Plan capacity around the busiest shift change and allow time for cleaning, water supply and wastewater servicing.",
+    "image": "/images/service-heroes/20ft-shower-trailer-sink/01-960.webp",
+    "alt": "Interior reference for an approved 20 ft five-stall shower trailer",
+    "unknown": "The legacy label is not an approved inventory configuration. Utility ratings, tank capacities, water heating performance, floor plan and the available unit must be confirmed for the project.",
+    "name": "20 ft Shower Trailer, 5 Stalls",
     "category": "Shower",
     "categoryHref": "/equipment-rental/shower-trailer/",
-    "intro": "Temporary123 offers one shower-only configuration: a 22 ft mobile shower trailer with 10 stalls. It is available for rental or lease planning for construction sites, man camps, renovations and emergency base camps.",
-    "highlight": "The shower-only fleet listing is a 22 ft trailer with 10 stalls. Confirm the available unit and site utility plan in the quote.",
+    "intro": "This legacy inventory URL is retained for compatibility. The approved shower-only listing is a 20 ft mobile shower trailer with five stalls and exterior handwashing sinks, available for rental or lease planning for construction sites, man camps, renovations and emergency base camps.",
+    "highlight": "Approved listing: 20 ft shower trailer with five stalls and exterior handwashing sinks. Confirm the available unit and site utility plan in the quote.",
     "source": "https://temporary123.com/equipment-rental/shower-trailer/"
   },
   "/services/shower-restroom-combination-trailers/13ft-3-stall/": {

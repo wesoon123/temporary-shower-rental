@@ -557,7 +557,7 @@ const servicePhotoReferences: Readonly<Record<string, ServicePhotoReference>> = 
   "/services/shower-trailers/22ft-10-stall/": {
     sourceTitle: "20 ft Shower Trailer",
     caption:
-      "Representative shower-only photography from a 20 ft five-stall trailer with exterior handwashing sinks. It does not depict the separate 22 ft ten-stall option; confirm that unit's floor plan with your quote.",
+      "Representative shower-only photography from the approved 20 ft five-stall trailer with exterior handwashing sinks. Confirm the available unit's floor plan with your quote.",
   },
   "/services/shower-restroom-combination-trailers/30ft-8-stall/": {
     sourcePath:

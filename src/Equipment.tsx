@@ -59,21 +59,21 @@ export const equipment: EquipmentCard[] = [
   {
     name: "Shower",
     path: "/equipment-rental/shower-trailer/",
-    image: "/images/catalog/shower-trailer-960.webp",
-    smallImage: "/images/catalog/shower-trailer-480.webp",
-    imageAlt: "Private shower-only stall inside a shower trailer",
+    image: "/images/service-heroes/20ft-shower-trailer-sink/01-960.webp",
+    smallImage: "/images/service-heroes/20ft-shower-trailer-sink/01-480.webp",
+    imageAlt: "Actual shower stall inside a 20 ft temporary shower trailer",
     category: "Hygiene facilities",
-    text: "Rent a 22 ft shower trailer with 10 stalls or a 20 ft shower container with 5 stalls for construction crews, man camps and emergency base camps.",
+    text: "Rent an approved 20 ft shower trailer with 5 stalls or a 20 ft shower container with 5 stalls for construction crews, man camps and emergency base camps.",
     detail:
-      "Shower-only options include a 22 ft trailer with 10 stalls and a 20 ft container with 5 stalls. Share occupancy and peak-use periods so we can review the available unit, privacy, hot water, wastewater, delivery method and placement requirements.",
-    tags: ["22 ft: 10 stalls", "20 ft: 5 stalls", "Emergency 24/7"],
+      "Shower-only options include an approved 20 ft trailer with 5 stalls and a 20 ft container with 5 stalls. Share occupancy and peak-use periods so we can review the available unit, privacy, hot water, wastewater, delivery method and placement requirements.",
+    tags: ["20 ft: 5 stalls", "20 ft container: 5 stalls", "Emergency 24/7"],
   },
   {
     name: "Restroom",
     path: "/equipment-rental/restroom-trailers/",
-    image: "/images/catalog/restroom-trailers-960.webp",
-    smallImage: "/images/catalog/restroom-trailers-480.webp",
-    imageAlt: "Shower and restroom combination unit shown as a reference; restroom-only configuration not pictured",
+    image: "/images/catalog-supplied/restroom-trailers/01-960.webp",
+    smallImage: "/images/catalog-supplied/restroom-trailers/01-480.webp",
+    imageAlt: "Toilet and wall-mounted sink inside a commercial mobile restroom trailer",
     category: "Site amenities",
     text: "Plan temporary restroom facilities for crews, guests and active field operations. Confirm the available restroom-only configuration before booking.",
     detail:
@@ -83,9 +83,9 @@ export const equipment: EquipmentCard[] = [
   {
     name: "Shower and Restroom Combination Trailers",
     path: "/services/shower-restroom-combination-trailers/",
-    image: "/images/catalog/restroom-trailers-960.webp",
-    smallImage: "/images/catalog/restroom-trailers-480.webp",
-    imageAlt: "Shower and restroom combination trailer reference, not a shower-only unit",
+    image: "/images/service-heroes/13ft-shower-restroom-combination/01-960.webp",
+    smallImage: "/images/service-heroes/13ft-shower-restroom-combination/01-480.webp",
+    imageAlt: "Interior of a 13 ft three-stall shower and restroom combination trailer",
     category: "Combined hygiene facilities",
     text: "Rent luxury shower and restroom combination trailers with clearly listed stall capacities for temporary sites and crew accommodation.",
     detail:

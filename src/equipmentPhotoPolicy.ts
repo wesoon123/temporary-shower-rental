@@ -39,7 +39,7 @@ export function referenceCaptionForModel(modelId: string | null) {
   if (modelId === "model-06")
     return "20 ft laundry container option: interior references from the supplied container collection, not a laundry trailer. No exterior is pictured. Confirm the available unit and layout with your quote.";
   if (modelId === "model-21")
-    return "20 ft, five-stall shower-trailer reference set with external handwashing sinks. These are not photographs of the separate 22 ft, ten-stall option. Confirm the available unit with your quote.";
+    return "Approved 20 ft, five-stall shower-trailer reference set with external handwashing sinks. Confirm the available unit with your quote.";
   if (modelId === "april-20ft-refrigerated-container")
     return "Interior reference for the 20 ft refrigerated container option. The same interior reference is used for the 20 ft trailer; no container exterior is pictured.";
   if (modelId === "model-19")

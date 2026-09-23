@@ -170,3 +170,14 @@
   background: #ffe09a !important;
   border-color: #ffe09a !important;
 }
+
+/* The spreadsheet-aligned Super 8 fleet uses a four-column desktop menu. */
+.shower-unit-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1000px) {
+  .shower-unit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
