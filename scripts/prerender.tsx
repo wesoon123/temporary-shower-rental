@@ -103,6 +103,7 @@ const allRoutes = [
     ...catalog.items.map((item) => item.path),
     ...serviceCategories.map((item) => item.href),
     ...serviceOptions.map((item) => item.href),
+    ...Object.keys(modelDetails),
     ...regionPages.map((item) => item.path),
     ...regionPages.map((item) => `${item.path}cities/`),
     ...reviewedCityPages.map((item) => item.path),
